@@ -1,0 +1,31 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3A3A3A;
+    --secondary-color: #787885;
+    --button-color: #E02C6D;
+    --yellow-color: #FB8200;
+    --background-color: #0A0826;
+    --white-color: #ffffff;
+    --black-grey: #18191F;
+    --black: #000000;
+    --grey: #5E6366;
+
+    --heading-size-52: 3.2rem;
+    --card-title-28: 1.8rem;
+    --price-size-24: 1.5rem;
+    --title-size-16: 1rem;
+    --description-size-14: 0.9rem;
+    --featured-size-38: 2.4rem;
+
+    --heading-weight-700: 700;
+    --card-title-weight-600: 600;
+    --card-weight-500: 500;
+    --price-weight-400: 400;
+}
