@@ -234,7 +234,7 @@ We are gamer End
 ============== */
 
 /* ==========
-We are gamer start
+Online Games start
 ============== */
 .online-title {
     text-align: center;
@@ -258,7 +258,7 @@ We are gamer start
     font-weight: var(--description-weight-400);
     margin-top: 16px;
 }
-.online-game-container {
+/* .online-game-container {
     margin-top: 48px;
 }
 .online-content {
@@ -272,9 +272,61 @@ We are gamer start
 }
 .online-cardescription {
     margin-top: 24px;
+} */
+.online-content {
+    display: flex;
 }
+.online-card {
+    flex-basis: 25%;
+    padding: 10px;
+}
+.online-game-container .card {
+    position: relative;
+    width: 100%;
+}
+.online-game-container figure {
+    width: 100%;
+    height: 400px;
+}
+.online-game-container .card img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.online-game-container .card .hover-item-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.60);
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.online-game-container .card .hover-item-bg .hover-item {
+    position: static;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.online-game-container .online-card:hover .card .hover-item-bg {
+    display: block;
+}
+.online-game-container .card .hover-item-bg .hover-item div {
+    text-align: center;
+    color: var(--pink-color)
+}
+.online-game-container .card .hover-item-bg .hover-item p {
+    
+}
+
 /* ==========
-We are gamer End
+Online Games End
 ============== */
 
 /* ==================
@@ -312,16 +364,53 @@ Play Instantly start
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    position: relative;
+   
 }
 .instantly-image img {
     max-width: 40%;
-    position: absolute;
     margin-left: -15%;
     margin-right: 0;
     margin-bottom: 0;
     margin-top: 90%;
+
 }
 /* ==================
 Play Instantly End
+==================== */
+
+/* ==================
+image box start
+==================== */
+.img-box-container {
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.img-box-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
+.img-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    justify-content: center;
+}
+.img-box img {
+    max-width: 100%;
+    text-align: center;
+}
+.img-box::before {
+    content: url(../../b8a2-fils/images/Rectangle\ 11.png);
+    text-align: center;
+    justify-content: center;
+}
+.img-box-description {
+    color: var(--primary-color);
+    font-size: var(--btn-foot-des-size-20px);
+    font-weight: var(--sub-title-600);
+
+}
+/* ==================
+image box End
 ==================== */
