@@ -258,27 +258,18 @@ Online Games start
     font-weight: var(--description-weight-400);
     margin-top: 16px;
 }
-/* .online-game-container {
-    margin-top: 48px;
-}
-.online-content {
-    display: flex;
-    gap: 20px;
-}
-.online-card img {
-    flex-wrap: wrap;
-    display: inline-block;
-    max-width: 100%;
-}
-.online-cardescription {
-    margin-top: 24px;
-} */
 .online-content {
     display: flex;
 }
 .online-card {
     flex-basis: 25%;
     padding: 10px;
+}
+.online-card-description {
+    color: var(--grey);
+    font-size: var(--btn-foot-des-size-20px);
+    font-weight: var(--footer-weight-500);
+    margin-top: 20px;
 }
 .online-game-container .card {
     position: relative;
@@ -319,10 +310,13 @@ Online Games start
 }
 .online-game-container .card .hover-item-bg .hover-item div {
     text-align: center;
-    color: var(--pink-color)
+    color: var(--white-color);
 }
 .online-game-container .card .hover-item-bg .hover-item p {
-    
+    color: var(--pink-color);
+    font-size: var(--btn-foot-des-size-20px);
+    font-weight: var(--sub-title-600);
+    margin-top: 10px;
 }
 
 /* ==========
@@ -334,9 +328,20 @@ Play Instantly start
 ==================== */
 .instantly-container {
     display: flex;
-    gap: 100px;
     align-items: center;
     margin-top: 50px;
+}
+.instantly-container .col {
+    flex-basis: 50%;
+}
+.instantly-container .instantly-content {
+    padding-right: 70px;
+}
+/* .instantly-content {
+    display: flex;
+} */
+.colum {
+    text-align: right;
 }
 .instantly-title1 {
     font-size: 44px;
@@ -358,22 +363,23 @@ Play Instantly start
     margin-top: 16px;
 }
 .instantly-image {
-    background-image: url('../../b8a2-fils/images/Rectangle\ 55.png');
-    width: 630px;
-    height: 650px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-   
+    padding-left: 70px;
 }
 .instantly-image img {
-    max-width: 40%;
-    margin-left: -15%;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 90%;
-
+    display: inline-block;
+    width: 100%;
 }
+.play-bottom-img img {
+    display: inline-block;
+    width: 100%;
+}
+.instantly-image .play-bottom-img {
+    width: 150px;
+    margin-top: -100px;
+    margin-left: -70px;
+}
+
+
 /* ==================
 Play Instantly End
 ==================== */
@@ -414,3 +420,62 @@ image box start
 /* ==================
 image box End
 ==================== */
+
+/* ==============
+Footer start
+============= */
+footer {
+    background-color: var(--primary-color);
+    padding: 120px 0;
+}
+.footer-logo {
+    font-size: var(--title-size-44px);
+    font-weight: var(--title-weight-700);
+    color: var(--white-color);
+    text-align: center;
+}
+.footer-logo .gamer-g {
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer-logo:before {
+    content: url(../../b8a2-fils/images/Frame.png);
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer-container .footer-menu ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.footer-container .footer-menu ul li {
+    list-style: none;
+    margin-right: 35px;
+}
+.footer-container .footer-menu ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+.footer-icon {
+    text-align: center;
+    margin-top: 60px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-icon img {
+    margin-right: 35px;
+}
+.footer-copy {
+    text-align: center;
+    color: var(--white-color);
+    margin-top: 28px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+/* =============
+Footer End
+=============== */
