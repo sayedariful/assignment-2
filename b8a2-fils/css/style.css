@@ -391,26 +391,32 @@ image box start
     justify-content: center;
     padding-bottom: 100px;
 }
-.img-box-content {
+.img-box-container .img-box-content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
+    gap: 30px;
 }
-.img-box {
+.img-box-container .img-box-content .img-box {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
     justify-content: center;
+    /* gap: 30px; */
 }
-.img-box img {
+.img-box-content .img-box-description {
+    width: 150px;
+    margin-top: 20px;
+}
+/* .img-box img {
     max-width: 100%;
     text-align: center;
-}
-.img-box::before {
+} */
+/* .img-box::before {
     content: url(../../b8a2-fils/images/Rectangle\ 11.png);
     text-align: center;
     justify-content: center;
-}
+} */
 .img-box-description {
     color: var(--primary-color);
     font-size: var(--btn-foot-des-size-20px);
