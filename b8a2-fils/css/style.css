@@ -15,7 +15,7 @@
 
 
     --heading-95px: 7.8rem;
-    --title-size-48px: 4rem;
+    --title-size-44px: 3.7rem;
     --btn-foot-des-size-20px: 1.2rem;
     --description-size-18px: 1.1rem;
     --featured-size-38: 2.4rem;
@@ -59,7 +59,7 @@ nav ul li a {
     color: #3C354F;
 }
 .gamer-logo {
-    font-size: 45px;
+    font-size: var(--title-size-44px);
     font-weight: var(--title-weight-700);
 }
 .gamer-logo .gamer-g {
@@ -103,12 +103,12 @@ section {
 }
 .play-title {
     color: var(--primary-color);
-    font-size: var(--title-size-48px);
+    font-size: var(--title-size-44px);
     font-weight: var(--sub-title-600);
 }
 .play-heading {
     color: var(--secondary-color);
-    font-size: var(--heading-95px);
+    font-size: 85px;
     font-weight: var(--heading-weight-800);
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -176,15 +176,152 @@ section {
 /* ==============
 Play link End
 ================= */
-
+/* ==========
+We are gamer start
+============== */
 .gamer-container {
     display: flex;
     gap: 50px;
-    text-align: center;
+    align-items: center;
 }
 .gamer-image img {
     width: 100%;
+    margin-left: 0 auto;
 }
 .gamer-content {
+    text-align: right;
+    max-width: 520px;
+}
+.gamer-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--title-size-44px);
+    font-weight: var(--title-weight-700);
+    
+}
+.gamer-description {
+    color: var(--grey);
+    font-size: var(--description-size-18px);
+    font-weight: var(--description-weight-400);
+    margin-top: 24px;
+}
+.gamer-button-more {
+    padding: 21px 40px;
+    color: var(--white-color);
+    background-color: var(--pink-color);
+    border-radius: 48px;
+    border: 0;
+    font-size: var(--btn-foot-des-size-20px);
+    font-weight: var(--sub-title-600);
+    margin-right: 20px;margin-top: 32px;
+}
+.gamer-purpose {
+    color: var(--grey);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: var(--footer-weight-500);
+    margin-top: 24px;
+}
+.gamer-unleash {
+    color: var(--grey);
+    font-size: 32px;
+    font-weight: var(--title-weight-700);
+}
+/* ==========
+We are gamer End
+============== */
+
+/* ==========
+We are gamer start
+============== */
+.online-title {
     text-align: center;
 }
+.online-game {
+    color: #0B0223;
+    font-size: 44px;
+    font-weight: var(--title-weight-700);
+}
+.funy {
+    font-size: 44px;
+    font-weight: var(--title-weight-700);
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.funy-description {
+    color: var(--grey);
+    font-size: var(--description-size-18px);
+    font-weight: var(--description-weight-400);
+    margin-top: 16px;
+}
+.online-game-container {
+    margin-top: 48px;
+}
+.online-content {
+    display: flex;
+    gap: 20px;
+}
+.online-card img {
+    flex-wrap: wrap;
+    display: inline-block;
+    max-width: 100%;
+}
+.online-cardescription {
+    margin-top: 24px;
+}
+/* ==========
+We are gamer End
+============== */
+
+/* ==================
+Play Instantly start
+==================== */
+.instantly-container {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-top: 50px;
+}
+.instantly-title1 {
+    font-size: 44px;
+    font-weight: var(--title-weight-700);
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.instantly-title-2, .instantly-title-3 {
+    font-size: 44px;
+    font-weight: var(--title-weight-700);
+    color: var(--primary-color);
+}
+.instantly-description {
+    color: var(--grey);
+    font-size: var(--description-size-18px);
+    font-weight: var(--description-weight-400);
+    margin-top: 16px;
+}
+.instantly-image {
+    background-image: url('../../b8a2-fils/images/Rectangle\ 55.png');
+    width: 630px;
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.instantly-image img {
+    max-width: 40%;
+    position: absolute;
+    margin-left: -15%;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 90%;
+}
+/* ==================
+Play Instantly End
+==================== */
