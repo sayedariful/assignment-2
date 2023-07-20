@@ -86,13 +86,6 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-/* .gamer-logo:before {
-    content: url(../../b8a2-fils/images/Frame.png);
-    display: inline-block;
-    margin-right: 15px;
-} */
-
 .gamer-button {
     border: 0;
     border-radius: 8px;
